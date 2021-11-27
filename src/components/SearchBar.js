@@ -6,7 +6,12 @@ const SearchBar = () => {
   return (
     <View style={styles.backgroundStyle}>
       <Feather name="search" style={styles.iconStyle} />
-      <TextInput placeholder="Search" style={styles.inputStyle} />
+      <TextInput
+        placeholder="Search"
+        style={styles.inputStyle}
+        autoCapitalize="none"
+        autoCorrect={false}
+      />
     </View>
   );
 };

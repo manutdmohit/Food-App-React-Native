@@ -13,7 +13,7 @@ const SearchScreen = () => {
     results.filter((result) => result.price === price);
 
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <SearchBar
         term={term}
         onTermChange={setTerm}

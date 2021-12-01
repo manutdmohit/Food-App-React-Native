@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import yelp from '../api/yelp';
 
 const ResultShowScreen = ({ navigation }) => {
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState({});
   const id = navigation.getParam('id');
 
   const getResult = async (id) => {

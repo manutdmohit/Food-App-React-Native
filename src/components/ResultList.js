@@ -6,6 +6,7 @@ import {
   FlatList,
   TouchableOpacity,
 } from 'react-native';
+import { withNavigation } from 'react-navigation';
 import ResultDetail from './ResultDetail';
 
 const ResultList = ({ title, results, navigation }) => {
@@ -39,4 +40,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ResultList;
+export default withNavigation(ResultList);

@@ -20,7 +20,6 @@ const SearchScreen = () => {
         onTermSubmit={() => searchApi(term)}
       />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
-      <Text style={{ marginLeft: 15 }}>Found {results.length} results</Text>
 
       <ScrollView>
         <ResultList
